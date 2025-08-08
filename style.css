@@ -3,7 +3,6 @@
 html { font-size: 50%; overflow-x: hidden;}
 body { background: var(--bg-color); color: var(--text-color);}
 .header { position: fixed; width: 100%; top: 0; left: 0; padding: 4rem 15%; background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px); display: flex; justify-content: space-between; align-items: center; z-index: 1000;}
-#menu-icon{ font-size: 3.5rem; color: var(--main-color); display: none;}
 .logo{ font-size: 3rem; color: var(--text-color); font-weight: 800; cursor: pointer; transition: 0.3s ease-in-out;}
 .logo:hover{ transform: scale(1.1);}
 span{ background: linear-gradient( 270deg, #DF8908 10%, #ff1d15 100%); background-clip: text; color: transparent;}
@@ -64,16 +63,3 @@ section{ min-height: 110vh; padding: 10rem 5%;}
 .footer ul li a{ color: white; border-bottom: 3px solid transparent; transition: 0.3s ease-in-out;}
 .footer ul li a:hover{ border-bottom: 3px solid var(--main-color);}
 .footer .copyright{ text-align: center; margin-top: 40px; font-size: 16px;}
-@media(max-width:1285px){
-#menu-icon{ display: block;}
-.navbar{ position: absolute; top: 100%; right: 0; width: 50%; padding: 1rem 3rem; background-color: rgba(0, 0, 0, 0.8); border-bottom-left-radius: 2rem; border-left: 2px solid var(--main-color); border-bottom: 2px solid var(--main-color); display: none;}
-.navbar a{ display: block; font-size: 2rem; margin: 3rem 0; color: var(--text-color);}
-.navbar.active{ display: block;}
-.gradient-btn{ display: none;}
-.home{ flex-direction: column-reverse; margin: 5rem 0; gap: 5rem;}
-.home-content{ align-items: center; text-align: center;}
-.home-img img{ width: 56vw;}
-.about{ flex-direction: column-reverse; text-align: center;}
-.about h2{ text-align: center; margin: 2rem 0;}
-.about img{ width: 52vw;}
-.contact form{ flex-direction: column;}}
